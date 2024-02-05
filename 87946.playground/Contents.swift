@@ -28,29 +28,80 @@ import Foundation
 //}
 
 
+//func solution(_ k:Int, _ dungeons:[[Int]]) -> Int {
+//  var visited = Array.init(repeating: false, count: dungeons.count)
+//  var ans = 0
+//  
+//  func dfs(_ now: Int, depth: Int) {
+//    print("depth :\(depth), ans :\(ans) now \(now)")
+//    ans = max(depth, ans)
+//    
+//    
+//    for i in 0..<dungeons.count {
+//      if !visited[i] && now >= dungeons[i][0] {
+//        visited[i] = true
+//        dfs(now - dungeons[i][1], depth: depth + 1)
+//        visited[i] = false
+//      }
+//    }
+//  }
+//  
+//  dfs(k, depth: 0)
+//  
+//  return ans
+//}
+//  
+//
+//
+//solution(80, [[80,20],[50,40],[30,10]])
+
+
+//var answer = 0
+//var visited = [Bool]()
+//
+//func solution(_ k:Int, _ dungeons:[[Int]]) -> Int {
+//  visited = [Bool].init(repeating: false, count: dungeons.count)
+//  
+//  dfs(0, k, dungeons)
+//  
+//  return answer
+//}
+//
+//func dfs(_ index: Int, _ k:Int, _ dungeons:[[Int]]) {
+//  answer = max(answer, index)
+//  
+//  for (i, dungeon) in dungeons.enumerated() {
+//    if k - dungeon[0] >= 0 && !visited[i] {
+//      visited[index] = true
+//      dfs(index + 1, k - dungeon[1], dungeons)
+//      visited[index] = false
+//    }
+//  }
+//  
+//}
+//
+//solution(80, [[80,20],[50,40],[30,10]])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 func solution(_ k:Int, _ dungeons:[[Int]]) -> Int {
-  var visited = Array.init(repeating: false, count: dungeons.count)
-  var ans = 0
-  
-  func dfs(_ now: Int, depth: Int) {
-    print("depth :\(depth), ans :\(ans) now \(now)")
-    ans = max(depth, ans)
-    
-    
-    for i in 0..<dungeons.count {
-      if !visited[i] && now >= dungeons[i][0] {
-        visited[i] = true
-        dfs(now - dungeons[i][1], depth: depth + 1)
-        visited[i] = false
-      }
-    }
-  }
-  
-  dfs(k, depth: 0)
-  
-  return ans
+  return -1
 }
-  
-
-
-solution(80, [[80,20],[50,40],[30,10]])
