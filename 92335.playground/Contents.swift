@@ -1,3 +1,5 @@
+// k진수에서 소수 개수 구하기
+
 import Foundation
 
 //func solution(_ n:Int, _ k:Int) -> Int {
