@@ -38,21 +38,54 @@ import Foundation
 
 
 
+//
+//func solution(_ s:String) -> Int{
+//  var sList = s.map{ String($0) }
+//  var stack = [String]()
+//  
+//  
+//  for i in 1..<sList.count {
+//    if !stack.isEmpty || stack.last == sList[i] {
+//      stack.removeLast()
+//    } else {
+//      stack.append(sList[i])
+//    }
+//  }
+//  
+//  return stack.isEmpty ? 1 : 0
+//}
+//
+//print("\(solution("cdcd"))")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 func solution(_ s:String) -> Int{
-  var sList = s.map{ String($0) }
-  var stack = [String]()
+  var answer:Int = -1
   
+  // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+  print("Hello Swift")
   
-  for i in 1..<sList.count {
-    if !stack.isEmpty || stack.last == sList[i] {
-      stack.removeLast()
-    } else {
-      stack.append(sList[i])
-    }
-  }
-  
-  return stack.isEmpty ? 1 : 0
+  return answer
 }
 
-print("\(solution("cdcd"))")
+solution("cdcd")
