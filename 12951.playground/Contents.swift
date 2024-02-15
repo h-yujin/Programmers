@@ -62,6 +62,18 @@ import UIKit
 
 
 func solution(_ s:String) -> String {
-    return ""
+  var sList = s.map{String($0).lowercased()}
+  var result = sList[0].uppercased()
+  
+  for i in 1..<sList.count {
+    if sList[i - 1] == " " {
+      result.append(sList[i].uppercased())
+    } else {
+      result.append(sList[i])
+    }
+  }
+  
+  return result
 }
 
+solution("for the last week")
