@@ -48,10 +48,4 @@ print(solution(8, 4, 7))
 
 
 func solution(_ n:Int, _ a:Int, _ b:Int) -> Int {
-    var answer = 0
-
-    // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
-    print("Hello Swift")
-
-    return answer
 }
